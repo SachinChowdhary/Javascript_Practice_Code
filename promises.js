@@ -11,6 +11,7 @@
 // .catch((error)=>{
 //    console.log(error)
 // })
+
 // //2nd Promise
 // new Promise((resolve, reject)=>{
 //    setTimeout(() => {
@@ -30,20 +31,21 @@
 //    setTimeout(()=>{
 //       console.log('3rd Promise started')
 //       resolve({name:'sachin', id:2179})
+         //reject('Error')
 //    },1000)
 // })
 // .then((obj)=>{
 //    console.log(obj,'promise 3 resolved')
 // })
-// .catch(()=>{
-//    console.log('error')
+// .catch((error)=>{
+//    console.log(error)
 // })
 
 // //4th promise
 // const promise4=new Promise((resolve, reject)=>{
 //    setTimeout(()=>{
 //      console.log('4th Promise started')
-//      let error=true
+//      let error=santosh
 //      if(!error){
 //       resolve({username:'Lord_PUNK', password:'123'})
 //      }
@@ -108,6 +110,7 @@ getAllUsers()
 // .then((data)=>{
 //     console.log(data);
 // })
+
 // .catch((err)=>console.log(err))
 // }
 // fun()

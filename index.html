@@ -11,6 +11,7 @@
     <button id="stop">Stop</button>
 </body>
 <script>
+    let str1=false
     const h1=document.querySelector('h1').style;
     const start=document.querySelector('#start');
     const stop=document.querySelector('#stop');
@@ -19,11 +20,11 @@
     const duration=300
     let randomChange=()=>{
       let dummy='#';
-      for(let i=0;i<6;i++){
-        dummy+=colour[Math.floor(Math.random()*colour.length)]
+      for(let i=0;i<6;i++){             
+        dummy+=colour[Math.floor(Math.random()*colour.length)]      
       }
       return dummy;
-    }
+    }                                                                    
     start.addEventListener('click',()=>{
        if(!timeInterval){
         timeInterval=setInterval(()=>{
